@@ -1,12 +1,12 @@
 {
   "name": "nocms-data-providers",
-  "version": "0.0.0-semantic-release",
+  "version": "0.0.0-development",
   "description": "Pluggable handlers for common functionality in NoCMS publisher interface",
   "main": "lib/index.js",
   "scripts": {
     "dev": "nodemon ./example/index.js",
     "prepare": "babel ./src --out-dir ./lib --source-maps --presets env",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release",
     "eslint": "eslint ."
   },
   "repository": {
@@ -22,13 +22,10 @@
     "eslint-plugin-import": "^2.2.0",
     "express": "^4.16.3",
     "nodemon": "^1.17.2",
-    "semantic-release": "^8.2.0",
+    "semantic-release": "^15.1.2",
     "tape": "^4.8.0"
   },
   "dependencies": {
-    "nocms-config-client": "^1.1.0",
-    "nocms-events": "^1.2.1",
-    "nocms-logger": "^4.2.3",
     "superagent": "^3.8.2"
   },
   "author": "Magne Skutle",
