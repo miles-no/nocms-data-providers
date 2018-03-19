@@ -2,7 +2,7 @@ const request = require('superagent');
 
 module.exports = (req, res, config) => {
   request
-    .get(`${config.get('pageService')}/export-page-data`)
+    .get(`${config.pageService}/export-page-data`)
     .set('Authorization', `Bearer ${req.cookies['nocms-authenticated']}`)
     .end((err, response) => {
       if (err) {
