@@ -1,5 +1,5 @@
 const express = require('express');
-const { exportPages, getAllPages } = require('../lib');
+const {} = require('../lib');
 
 const app = express();
 

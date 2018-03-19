@@ -1,6 +1,6 @@
 {
   "name": "nocms-data-providers",
-  "version": "0.0.1",
+  "version": "0.0.0-semantic-release",
   "description": "Pluggable handlers for common functionality in NoCMS publisher interface",
   "main": "lib/index.js",
   "scripts": {

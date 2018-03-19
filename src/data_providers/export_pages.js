@@ -1,7 +1,6 @@
 const request = require('superagent');
-const config = require('nocms-config-client');
 
-module.exports = (req, res) => {
+module.exports = (req, res, config) => {
   request
     .get(`${config.get('pageService')}/export-page-data`)
     .set('Authorization', `Bearer ${req.cookies['nocms-authenticated']}`)
