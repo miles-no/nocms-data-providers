@@ -1,9 +1,11 @@
-const exportPages = require('./middleware/export_pages');
-const getAllPages = require('./middleware/get_all_pages');
+const exportPages = require('./data_providers/export_pages');
+const getAllPages = require('./data_providers/get_all_pages');
 
 module.exports = {
-  getMiddleware: (config) => ({
-    exportPages: () => exportPages(config),
-    getAllPages: () => getAllPages(config),
-  }),
+  getDataProviders: (config) => {
+    return {
+      exportPages: () => { return exportPages(config); },
+      getAllPages: () => { return getAllPages(config); },
+    };
+  },
 };
