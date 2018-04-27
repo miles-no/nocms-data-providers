@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon ./example/index.js",
     "prepare": "babel ./src --out-dir ./lib --source-maps --presets env",
-    "semantic-release": "semantic-release",
+    "nsp": "nsp check",
     "eslint": "eslint ."
   },
   "repository": {
@@ -16,13 +16,13 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-preset-env": "^1.6.1",
-    "condition-circle": "^1.5.0",
     "eslint": "^4.9.0",
     "eslint-config-webteam": "^2.0.0",
     "eslint-plugin-import": "^2.2.0",
     "express": "^4.16.3",
     "nodemon": "^1.17.2",
-    "semantic-release": "^15.1.2",
+    "nsp": "^3.2.1",
+    "semantic-release": "^15.1.7",
     "tape": "^4.8.0"
   },
   "dependencies": {
@@ -30,9 +30,5 @@
   },
   "author": "Magne Skutle",
   "license": "ISC",
-  "homepage": "https://github.com/miles-no/nocms-data-providers#readme",
-  "release": {
-    "verifyConditions": "condition-circle",
-    "debug": false
-  }
+  "homepage": "https://github.com/miles-no/nocms-data-providers#readme"
 }
